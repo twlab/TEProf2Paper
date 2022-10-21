@@ -1,0 +1,7 @@
+rmsk	/bar/nshah/reference/rnapipelinerefhg38/rmskhg38.bed6.gz
+rmskannotationfile	/bar/nshah/reference/rnapipelinerefhg38/repeatmasker_description_uniq.lst
+gencodeplusdic	/bar/nshah/reference/rnapipelinerefhg38/genecode_plus_hg38.dic
+gencodeminusdic	/bar/nshah/reference/rnapipelinerefhg38/genecode_minus_hg38.dic
+focusgenes	/bar/nshah/reference/rnapipelinerefhg38/oncogenes_augmented.txt
+plusintron	/bar/nshah/reference/rnapipelinerefhg38/gencode.v25.annotation.sorted.gtf_introns_plus_sorted.gz
+minusintron	/bar/nshah/reference/rnapipelinerefhg38/gencode.v25.annotation.sorted.gtf_introns_minus_sorted.gz
