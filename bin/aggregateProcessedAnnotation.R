@@ -217,7 +217,7 @@ if (keepNone == 'no'){
 resexonlength <- resexonlength[resexonlength$tumorcount >= totalTreatmentMin,]
 
 # Treatment minimum filter
-resexonlength <- resexonlength[(resexonlength$tumorcount + resexonlength$normalcount) >= totalTreatmentMin,]
+resexonlength <- resexonlength[(resexonlength$tumorcount + resexonlength$normalcount) >= totalMin,]
 
 #TEfilter
 if(filterTE == 'yes'){
