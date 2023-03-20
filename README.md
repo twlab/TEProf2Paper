@@ -8,6 +8,8 @@ In addition, the program can be run in a reference-guided approach based on prev
 
 There are additional modules to facilitate transcript translation.
 
+Please cite the following: https://doi.org/10.1038/s41588-023-01349-3
+
 # Outline
 
 * [<strong>TEProF2</strong>](#teprof2)
