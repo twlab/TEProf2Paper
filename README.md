@@ -111,10 +111,29 @@ Then you will need to install the R package `Xmisc` manually
 R
 ```
 
-In the R console install the package
+In the R console install devtools and then install Xmisc from the archive
 
 ```
 >install.packages('Xmisc')
+```
+
+If the above does not work since Xmisc has been recently removed from CRAN, can install it through devtools. Exit R, and run the following. 
+
+```
+conda install -c conda-forge r-devtools
+```
+
+Start R 
+
+```
+R
+```
+
+Load devtools and make sure the environment variables are set properly
+
+```
+>Sys.setenv(TAR = "/bin/tar")
+>install_url("https://cran.r-project.org/src/contrib/Archive/Xmisc/Xmisc_0.2.1.tar.gz")
 ```
 
 Once this is done, you can exit `R`, and now you have an environment that can run the pipeline
