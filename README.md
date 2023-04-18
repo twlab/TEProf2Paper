@@ -55,8 +55,8 @@ Please cite the following: https://doi.org/10.1038/s41588-023-01349-3
 * [Usage Reference Guided](#usage-reference-guided)
    * [1. Obtain reference gtf and gff3 file for analysis](#1-obtain-reference-gtf-and-gff3-file-for-analysis)
    * [2. Annotate the gff3 file, or obtain annotations from a previous run](#2-annotate-the-gff3-file-or-obtain-annotations-from-a-previous-run)
-   * [3. Calculate Transcript-Level Expression](#3-calculate-transcript-level-expression)
-   * [3. Process and map expression output](#3-process-and-map-expression-output)
+   * [3a. Calculate Transcript-Level Expression](#3-calculate-transcript-level-expression)
+   * [3b. Process and map expression output](#3-process-and-map-expression-output)
       * [(A) Obtain annotations, filter by candidates identified previously, and identify major splicing intron](#a-obtain-annotations-filter-by-candidates-identified-previously-and-identify-major-splicing-intron-1)
       * [(B) Process stringtie transcript annotation files to get relevant information and aggregate](#b-process-stringtie-transcript-annotation-files-to-get-relevant-information-and-aggregate-1)
    * [4. Quantification processing, sample identification, and final table creation](#4-quantification-processing-sample-identification-and-final-table-creation)
@@ -846,7 +846,7 @@ rmskhg38_annotate_gtf_update_test_tpm_cuff.py reference_merged_candidates.gff3 <
  
 (4) reference_merged_candidates.gff3_annotated_filtered_test*
 
-## 3. Calculate Transcript-Level Expression
+## 3a. Calculate Transcript-Level Expression
 
 Transcript-level expression can be calculated to compare the TE-gene transcripts to the canonical gene transcript to find those that are contributing significantly to overall expression of the gene. 
 
@@ -865,7 +865,7 @@ find <bam_directory> -name "*bam" | while read file ; do xbase=${file##*/}; echo
 Note:
 >The -b flag outputs all the stats to a new folder. This is in a format that is compatible with the [Ballgown](https://github.com/alyssafrazee/ballgown 'Ballgown Github')  downstream pipeline that can be used instead of our own custom methods of transcript identification. 
 
-## 3. Process and map expression output
+## 3b. Process and map expression output
 
 ### (A) Obtain annotations, filter by candidates identified previously, and identify major splicing intron
 
