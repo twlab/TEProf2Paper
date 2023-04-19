@@ -815,6 +815,8 @@ This is a version of the pipeline where you can skip the custom reference creati
 
 This version assumes that the user has already obtained a reference set of transcripts that they are comfortable with and they want to test across their samples. In this case, they just need to quantify the transcripts.
 
+It is important that you have a valid `arguments.txt` file pointing to the references for the pipeline. Please see step 1 of the previous section to see how to set it up [(1) Setup arguments.txt](#1-setup-argumentstxt). 
+
 ## 1. Obtain reference gtf and gff3 file for analysis
 
 The one based on our TCGA 33 tumor analysis can be downloaded here:
@@ -1065,6 +1067,6 @@ There are also options to make this output compatible with more traditional stat
 
 # Questions?
 
-If you have any questions, please contact: Nakul Shah- nakul.m.shah@wustl.edu
+If you have any questions, please post in the issues of the repository. 
 
 
