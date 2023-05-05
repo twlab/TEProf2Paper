@@ -819,7 +819,7 @@ It is important that you have a valid `arguments.txt` file pointing to the refer
 
 ## 1. Obtain reference gtf and gff3 file for analysis
 
-The one based on our TCGA 33 tumor analysis can be downloaded here:
+The one based on our TCGA 33 tumor analysis can be downloaded here: [External Download Link](https://wangftp.wustl.edu/~nshah/ucsf/TCGA33Download/ 'Reference GTF')
 
 If you are using a custom GTF program from another source, use cufflinks gffread to be able to generate the gff3 file
 
